@@ -22,9 +22,6 @@
 <script type="text/javascript" src="style/js/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
 <script type="text/javascript" src="style/js/transify.js"></script>
-<script type="text/javascript" src="style/js/jquery.aw-showcase.js"></script>
-<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
-<script type="text/javascript" src="style/js/carousel.js"></script>
 <script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
 <script type="text/javascript" src="style/js/jquery.superbgimage.min.js"></script>
 <script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
@@ -33,33 +30,6 @@ jQuery(document).ready(function($){
 	$('.forms').dcSlickForms();
 });
 </script>
-<script type="text/javascript">
-
-$(document).ready(function()
-{
-	$("#showcase").awShowcase(
-	{
-		content_width:			900,
-		content_height:			400,
-		auto:					true,
-		interval:				3000,
-		continuous:				false,
-		arrows:					true,
-		buttons:				true,
-		btn_numbers:			true,
-		keybord_keys:			true,
-		mousetrace:				false, /* Trace x and y coordinates for the mouse */
-		pauseonover:			true,
-		stoponclick:			false,
-		transition:				'fade', /* hslide/vslide/fade */
-		transition_delay:		0,
-		transition_speed:		500,
-		show_caption:			'onload' /* onload/onhover/show */
-	});
-});
-
-</script>
-
 </head>
 <body>
 <!-- Fullscreen backgrounds -->
@@ -78,7 +48,7 @@ $(document).ready(function()
 <!-- Begin Wrapper -->
 <div id="wrapper">
   <div id="header">
-    <div class="logo opacity"><a href="index.html"><img src="style/images/logo.png" alt="" /></a></div>
+    <div class="logo"><a href="index.html"><img src="style/images/logo.png" alt="" /></a></div>
     <div class="social">
       <ul>
         <li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
@@ -92,7 +62,7 @@ $(document).ready(function()
     </div>
   </div>
   <div class="clear"></div>
-  <!-- Begin Menu -->
+ <!-- Begin Menu -->
   <div id="menu" class="menu opacity">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -113,7 +83,7 @@ $(document).ready(function()
       	  <li><a href="pagewithsidebar.html">Page with Sidebar</a></li>
         </ul>
       </li>
-      <li><a href="button-boxes-images.html">Styles</a>
+      <li><a href="button-boxes-images.html" class="active">Styles</a>
       	<ul>
       	  <li><a href="button-boxes-images.html">Buttons Boxes Images</a></li>
       	  <li><a href="columns.html">Columns</a></li>
@@ -126,110 +96,124 @@ $(document).ready(function()
     </ul>
     <br style="clear: left" />
   </div>
-  <!-- End Menu --> 
+  <!-- End Menu -->  
   
   <!-- Begin Container -->
   <div id="container" class="opacity"> 
-    
-    <!-- Begin Showcase -->
-    <div id="showcase" class="showcase"> 
-      <!-- Each child div in #showcase represents a slide -->
-      <div class="showcase-slide"> 
-        <!-- Put the slide content in a div with the class .showcase-content. -->
-        <div class="showcase-content"> <img src="style/images/art/s1.jpg" alt="1" /> </div>
-      </div>
-      
-      <!-- Each child div in #showcase represents a slide -->
-      <div class="showcase-slide"> 
-        <!-- Put the slide content in a div with the class .showcase-content. -->
-        <div class="showcase-content"> <img src="style/images/art/s2.jpg" alt="2" /> </div>
-        <div class="showcase-caption">
-				Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
-		</div>
-      </div>
-      
-      <div class="showcase-slide"> 
-        <!-- Put the slide content in a div with the class .showcase-content. -->
-        <div class="showcase-content"> <iframe src="http://player.vimeo.com/video/24243147?title=0&amp;byline=0&amp;portrait=0" width="900" height="400" frameborder="0"></iframe> </div>
-      </div>
-      
-      <!-- Each child div in #showcase represents a slide -->
-      <div class="showcase-slide"> 
-        <!-- Put the slide content in a div with the class .showcase-content. -->
-        <div class="showcase-content"> <img src="style/images/art/s3.jpg" alt="3" /> </div>
-      </div>
-      <!-- Each child div in #showcase represents a slide -->
-      <div class="showcase-slide"> 
-        <!-- Put the slide content in a div with the class .showcase-content. -->
-        <div class="showcase-content"> <img src="style/images/art/s4.jpg" alt="4" /> </div>
-         <div class="showcase-caption">
-				Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-		</div>
-      </div>
+   
+	<div class="full-width">
+        <h3>Proin euismod dui rutrum risus</h3>
+        
+        
+        <h1>Heading 1</h1>
+    <div class="one-half">
+      <p><span class="dropcap">A</span>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
     </div>
-    <!-- End Showcase -->
-    
-    <div class="intro">Aenean fringilla aliquam est, a porttitor arcu euismod et. Maecenas rutrum erat at arcu porta interdum. Cras convallis ligula ac risus imperdiet placerat.</div>
-    <div class="hr2"></div>
-    <!-- Divider --> 
-    
-    <!-- Begin Top Columns -->
-    <h2>What We Do</h2>
-    <div class="two-third">
-      <p>Vivamus sodales pharetra libero, a tincidunt nisi condimentum a. Quisque non sodales nislero. Integer a tellus eget arcu fringilla molestie quis vel eros. Praesent fermentum vulputate purusa ornare. Vivamus imperdiet, quam et adipiscing placerat, nibh odio scelerisque risus, vitaere accumsan mi justo et quam. Pellentesque quis felis quis tortor porttitor lobortis nec ac risus.</p>
+    <div class="one-half last">
+      <p><span class="dropcap">B</span>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
+    </div>
+    <div class="clear"></div>
+    <br />
+    <br />
+    <br />
+    <div class="one-third">
+      <p><span class="dropcap">C</span>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
+    </div>
+    <div class="one-third">
+      <p><span class="dropcap">D</span>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
     </div>
     <div class="one-third last">
-      <ul>
-        <li>Vivamus at magna non ipsum.</li>
-        <li>Etiam pharetra pretium eros.</li>
-        <li>Curabitur porttitor ipsum nec magna.</li>
-        <li>Maecenas cursus arcu a nulla tristique.</li>
-      </ul>
+      <p><span class="dropcap">E</span>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
     </div>
-    <!-- End Top Columns -->
-    
+    <div class="clear"></div>
+    <br />
+    <br />
+    <br />
+    <h2>Heading 2</h2>
+    <div class="one-fourth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci.</p>
+    </div>
+    <div class="one-fourth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci.</p>
+    </div>
+    <div class="one-fourth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci.</p>
+    </div>
+    <div class="one-fourth last">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci.</p>
+    </div>
     <div class="clear"></div>
     <br />
     <br />
     <br />
-    
-    <!-- Begin 4 Columns -->
-    
-    <div class="one-fourth"> <img src="style/images/icon1.png" alt="" class="center" /><br />
-      <h4 class="center">Web Design</h4>
-      <p class="center">Vivamus soder pharetra libero atincidunt, nisi condimentum Quisque non sodales nislero.</p>
+    <h3>Heading 3</h3>
+    <div class="one-fifth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. </p>
     </div>
-    <div class="one-fourth"> <img src="style/images/icon2.png" alt="" class="center" /><br />
-      <h4 class="center">Photography</h4>
-      <p class="center">Vivamus soder pharetra libero atincidunt, nisi condimentum Quisque non sodales nislero.</p>
+    <div class="one-fifth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. </p>
     </div>
-    <div class="one-fourth"> <img src="style/images/icon3.png" alt="" class="center" /><br />
-      <h4 class="center">Motion Graphic</h4>
-      <p class="center">Vivamus soder pharetra libero atincidunt, nisi condimentum Quisque non sodales nislero.</p>
+    <div class="one-fifth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. </p>
     </div>
-    <div class="one-fourth last"> <img src="style/images/icon4.png" alt="" class="center" /><br />
-      <h4 class="center">Optimization</h4>
-      <p class="center">Vivamus soder pharetra libero atincidunt, nisi condimentum Quisque non sodales nislero.</p>
+    <div class="one-fifth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus.</p>
+    </div>
+    <div class="one-fifth last">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus.</p>
     </div>
     <div class="clear"></div>
-    <div class="hr1"></div>
-    <!-- Divider --> 
-    
-    <!-- Begin Latest Works -->
-    <h2>Latest Works</h2>
-    <div class="carousel">
-      <div id="carousel-scroll"><a href="#" id="prev">Prev</a><a href="#" id="next">Next</a></div>
-      <ul>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/c1.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/c2.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/c3.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/c4.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/c5.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/c6.jpg" alt="" /> </a> </li>
-      </ul>
+    <br />
+    <br />
+    <br />
+    <h4>Heading 4</h4>
+    <div class="one-sixth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus. </p>
     </div>
-    <!-- End Latest Works -->
+    <div class="one-sixth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus. </p>
+    </div>
+    <div class="one-sixth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus. </p>
+    </div>
+    <div class="one-sixth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus.</p>
+    </div>
+    <div class="one-sixth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus.</p>
+    </div>
+    <div class="one-sixth last">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus.</p>
+    </div>
+    <div class="clear"></div>
+   <br />
+    <br />
+    <br />
+    <h5>Heading 5</h5>
+    <div class="two-third">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
+    </div>
+    <div class="one-third last">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas. </p>
+    </div>
+    <div class="clear"></div>
+    <br />
+    <br />
+    <br />
+    <h6>Heading 6</h6>
+    <div class="one-fourth">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue. </p>
+    </div>
+    <div class="three-fourth last">
+      <p>Nam laoreet rutrum ligula, at tincidunt ligula sagittis semper. Integer congue vehicula lectus eu faucibus. Maecenas ante lectus, placerat et venenatis quis, dictum quis orci. Curabitur lacus nisi, vestibulum id aliquam sit amet, dictum sit amet lacus. </p>
+    </div>
+    <div class="clear"></div>
+
     
+
+      </div><!-- End Full Width -->
+     
+  <div class="clear"></div>
     <div id="footer">
       <div class="footer-top"></div>
       <!-- Divider -->
