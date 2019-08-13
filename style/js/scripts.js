@@ -9,7 +9,7 @@ $(function() {
 		randomtransition: 2, // 0-none, 1-use random transition (0-7)
 		z_index: -1, // z-index for the container
 		slideshow: 1, // 0-none, 1-autostart slideshow
-		slide_interval: 4000, // interval for the slideshow
+		slide_interval: 2000, // interval for the slideshow
 		randomimage: 1, // 0-none, 1-random image
 		speed: 'slow' // animation speed
 	};
